@@ -2,16 +2,38 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<script>
-(function(){
-  var ua = (navigator.userAgent || '').toLowerCase();
-  if (ua.indexOf('telegram') !== -1) {
-    // For GitHub Pages — replace 'your-repo' with your actual repo name if needed
-    var redirect = location.origin + '/open-in-chrome.html';
-    window.location.replace(redirect);
-  }
-})();
-</script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Open in Chrome</title>
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background: #1c1c1c;
+  color: #fff;
+  padding: 60px 20px;
+}
+a.button {
+  background: #4285f4;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  margin-top: 20px;
+}
+p.note {
+  margin-top: 20px;
+  color: #ccc;
+}
+</style>
+</head>
+<body>
+<h2>🌐 Open this page in Chrome</h2>
+<p>For best experience, open this link in your browser.</p>
+<a class="button" href="googlechrome://tamilmoviesdownload.github.io/movie-collection/">Open in Chrome</a>
+<p class="note">If the button doesn't work, tap ⋮ → “Open in browser”.</p>
+</body>
 
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>My Complete Movie Collection (Searchable)</title>
@@ -2855,4 +2877,5 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 </body>
 </html>
+
 
