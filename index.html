@@ -3,6 +3,30 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <script>
+(function(){
+  const ua = (navigator.userAgent || "").toLowerCase();
+  if (ua.includes("telegram")) {
+    document.head.innerHTML = `
+      <meta charset='utf-8'>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+      <title>Open in Chrome</title>
+      <style>
+        body {font-family: 'Poppins', sans-serif; background:#1c1c1c; color:white; text-align:center; padding:60px 20px;}
+        a.button {background:#4285f4; color:white; padding:12px 20px; border-radius:8px; text-decoration:none; font-size:18px; display:inline-block; margin-top:20px;}
+        p.note {margin-top:20px; color:#ccc;}
+      </style>
+    `;
+    document.body.innerHTML = `
+      <h2>🌐 Open this page in Chrome</h2>
+      <p>For best experience, open this link in your browser.</p>
+      <a class="button" href="googlechrome://${location.hostname}${location.pathname}">🔗 Open in Chrome</a>
+      <p class="note">If the button doesn't work, tap ⋮ → “Open in browser”.</p>
+    `;
+  }
+})();
+</script>
+
 <title>My Complete Movie Collection (Searchable)</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
@@ -2844,3 +2868,4 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 </body>
 </html>
+
