@@ -2,6 +2,17 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
+<script>
+(function(){
+  var ua = (navigator.userAgent || '').toLowerCase();
+  if (ua.indexOf('telegram') !== -1) {
+    // For GitHub Pages — replace 'your-repo' with your actual repo name if needed
+    var redirect = location.origin + '/open-in-chrome.html';
+    window.location.replace(redirect);
+  }
+})();
+</script>
+
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>My Complete Movie Collection (Searchable)</title>
 <style>
@@ -2844,3 +2855,4 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 </body>
 </html>
+
